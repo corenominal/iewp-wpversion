@@ -26,7 +26,7 @@ add_action( 'rest_api_init', 'iewp_wpversion_register_endpoint' );
 /**
  * Return WordPress Vesion
  */
-function iewp_wpversion_version( $request_data )
+function iewp_wpversion_version()
 {
     $data['version'] = get_bloginfo( 'version' );
     return $data;
